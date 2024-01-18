@@ -1,0 +1,351 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
+/* font-family: 'Libre Baskerville', serif; */
+
+/* #041562
+#11468F
+#DA1212*/
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-family: 'Libre Baskerville', serif;
+    font-size: 62.5%;
+}
+h1{
+    font-size: 4rem;
+}
+h2{
+    font-size: 3rem;
+}
+h3{
+    font-size: 2rem;
+}
+p{
+    font-size: 1.5em;
+}
+
+/* header */
+
+header{
+    background-color: #041562;
+      
+    position: sticky;
+    top: 0px;
+
+}
+header img{
+    width: 80px;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+header a{
+    color: #F6F1F1;
+    text-decoration: none;
+    font-family: 'Libre Baskerville', serif;
+    font-size: 1.5rem;
+}
+/*nav{
+   
+    width: 50%;
+}
+header ul{
+    
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 8px;
+}
+
+header a{
+    color: #F6F1F1;
+    text-decoration: none;
+    font-family: 'Libre Baskerville', serif;
+    font-size: 1.5rem;
+} */
+
+/* main index */
+
+.tituloIndex{
+    text-align: center;
+    background-image: url(../medios/banner.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 250px 0px;
+    text-shadow: 1px -1px 25px rgb(0, 0, 0);
+    color: #FFFFFF;
+}
+
+.tituloIndex p{
+    font-size: 4rem;
+
+}
+
+.tituloIndex h1{
+    font-size: 6rem;
+}
+
+/* section vectores */
+
+.presentacion{
+    font-size: 2rem;
+    padding-bottom: 15px;
+}
+.presentacion h2{
+    text-align: center;
+    text-decoration: underline;
+    padding: 20px 0px;
+    color: #11468F;
+    
+}
+.presentacion p{
+    color: #11468F;
+}
+.divPadreFlex{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around ;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.presentacion img{
+   
+    width: 200px;
+}
+
+.objetivo{
+    background-color: #041562;
+    padding: 50px;
+}
+.objetivo p{
+    color: #FFFFFF;
+    text-align: justify;
+    font-size: 2.5rem;
+}
+.margen{
+    margin: 30px 0px;
+}
+
+/* destacados */
+.destacados{
+    margin-bottom: 20px;
+}
+.destacados h2{
+    text-align: center;
+    color:#11468F;
+    text-decoration:underline;
+    margin: 20px 0px;
+}
+
+.cards{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.carru-ancho{
+    width: 50%;
+}
+.nuevoIngreso,.promocion{
+    border: solid 1px gray;
+    border-radius: 10px;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    background-color: #11468F;
+    color: rgb(255, 255, 255);
+}
+.card img{
+    width: 80%;
+    border-radius: 8px;
+}
+
+
+
+/*Nosotros------------------------------------------------------------------------*/
+.contenedor-grid img{
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
+}
+.contenedor-grid{ /*e-lactancia.org */
+    display: grid; 
+    grid-template-columns: 25% 40% 25%; 
+    grid-template-rows: 100px 150px 300px 300px 100px; 
+    gap: 2px 2px; 
+    grid-template-areas: 
+        "h1 h1 h1"
+        "casa1 texto1 texto1"
+        "casa1 casa2 casa2"
+        "texto2 casa3 texto3"
+        "h2 h2 h2"; 
+    justify-content: center;
+    justify-items: center;
+    align-items:center;
+    color:#041562;
+}
+.grid-titulo-1 { grid-area: h1; }
+.grid-img-1 { grid-area: casa1; }
+.grid-texto-1 { grid-area: texto1; }
+.grid-img-3 { grid-area: casa2; }
+.grid-texto-2 { grid-area: texto2; }
+.grid-img-2 { grid-area: casa3; }
+.grid-texto-3 { grid-area: texto3; }
+.grid-titulo-2 { grid-area: h2; }
+
+.contenedor-grid p{
+    text-align: justify;
+    margin: 0 25px;
+    color: #11468F;
+    font-weight: 600;
+    
+}
+
+.contenedor-grid span{
+    color: #DA1212;
+    text-decoration: underline;
+}
+
+/* Contacto----------------------------------------------------------------------- */
+.mainContacto h1{
+    text-align: center;
+    font-size: 5rem;
+    text-decoration: underline;
+    color: #041562;
+}
+.mapa{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 20px 0px;
+}
+
+/* formulario */
+.mensaje{
+    text-align: center;
+    margin: 20px 0;
+    font-size: 3rem;
+    color: #041562;
+    text-decoration: underline;
+    font-weight: 600;
+}
+.mainContacto form{
+    background-color: #11468F;
+    width: 40%;
+    margin: 0 auto;
+    border-radius: 10px;
+    font-size: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 10px 0;
+    color: #ffffff;
+}
+input{
+    width: 80%;
+    margin: 10px auto;
+}
+
+.boton{
+    width: 70px;
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #ffffff;
+    border-radius: 7px;
+    color:#11468F;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+/* Footer----------------------------------------------------------------------------- */
+
+footer{
+    background-color: #041562;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0px;
+}
+footer img, svg{
+    width: 50px;
+}
+
+.logoTelefono{
+    margin-left: 10px;
+}
+ footer div{
+   
+    width: 30%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+ }
+
+footer .logoFacebook{
+    border-radius: 50%;
+    background-color: white;
+    border: 1px solid white;
+}
+footer .logoInstagram{
+    border: 1px solid white;
+    background-color: white;
+    border-radius: 25%;
+}
+
+@media only screen and (max-width:500px) {
+    
+    /*header-------------------------------*/
+    header{
+        flex-direction: column;
+    }
+    nav{
+        width: 100%;
+    }
+    ul{
+        margin: 0 10px;
+    }
+    nav a{
+        font-size: 1.5rem;
+    }
+
+    /*nosotros-----------------------------------*/
+    .contenedor-grid{
+        grid-template-areas: 
+        "h1"
+        "texto1"
+        "casa1"
+        "texto2" 
+        "casa3" 
+        "texto3"
+        "h2"; 
+        grid-template-columns: 100%;
+        grid-template-rows: 100px 250px repeat(4,200px) 150px;
+    }
+    .grid-img-3 { display: none; }
+    .contenedor-grid img{
+        width: 95%;
+    }
+    .grid-titulo-2, .grid-titulo-1{
+        font-size: 3rem;
+        text-align: center;
+    }
+
+    /*footer-------------------------------------*/
+    footer div{
+        width: 50%;
+    }
+    footer p{
+        font-size: 1.5rem;
+    }
+}
